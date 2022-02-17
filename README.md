@@ -5,6 +5,7 @@
 
 #
 
+
 Repositório criado para desenvolvimento de desafio técnico proposto pela Trybe em linguagem Javascript, utilizando Node.js com Express no back-end, React.js para o front-end e MongoDB como banco de dados, escrito por Gustavo Caruso.
 
 </div>
