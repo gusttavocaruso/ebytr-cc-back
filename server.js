@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(router);
 app.use(err);
 app.use(cors({
-  origin: 'https://ebytr-cc-front.vercel.app/' || 'http://localhost:3000',
+  origin: '*',
   methods: ['POST', 'GET', 'PUT', 'DELETE']
 }));
 
