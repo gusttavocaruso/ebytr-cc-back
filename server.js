@@ -2,12 +2,15 @@ const express = require('express');
 const cors = require('cors');
 const router = require('./routes');
 const err = require('./layers/middlewares/error');
-const corsAll = require('./layers/middlewares/corsPermission');
+// const corsAll = require('./layers/middlewares/corsPermission');
 
 const app = express();
 app.use(express.json());
-app.use(corsAll);
-app.use(cors());
+// app.use(corsAll);
+app.use(cors({
+  origin: 'https://ebytr-cc-front.vercel.app/',
+  methods: ['POST', 'GET', 'PUT', 'DELETE']
+}));
 app.use(router);
 app.use(err);
 
